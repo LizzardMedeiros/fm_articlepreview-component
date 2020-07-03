@@ -1,0 +1,59 @@
+.reference {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: url(../design/desktop-design.jpg);
+  z-index: -1;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  font-family: 'Manrope', sans-serif;
+}
+
+h1 {
+  font-size: 1.28rem;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 0.8rem;
+  font-weight: 700;
+  line-height: 20px;
+}
+
+.component, .component .thumb-container img {
+  height: 280px;
+}
+
+.component {
+  display: flex;
+  justify-content: space-between;
+  border-radius: 8px;
+  width: 730px;
+  background-color: rgba(21, 21, 21, .3);
+}
+
+.component .thumb-container, .component .thumb-container img {
+  width: 320px;
+}
+
+.component .thumb-container{
+  overflow: hidden;
+}
+
+.content-container {
+  padding: 18px 38px;
+  width: 410px;
+}
+
+.attribution {
+
+}
