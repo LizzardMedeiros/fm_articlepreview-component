@@ -17,7 +17,7 @@
   </style>
 </head>
 <body>
-  <div class="reference"></div>
+  <!-- <div class="reference"></div> -->
   <div class="component">
     <div class="thumb-container">
       <img class="thumb" src="./images/drawers.jpg"/>
@@ -32,22 +32,41 @@
         it felt slightly bare and uninviting. I’ve got some simple tips 
         to help you make any room feel complete.
       </h2>
+      <div class="user-sector">
+        <div class="profile-container">
+          <img src="./images/avatar-michelle.jpg"/>
+        </div>
+        <div class="profile-data">
+          <strong>Michelle Appleton</strong>
+          <small>28 Jun 2020</small>
+        </div>
+        <div class="social">
+          <div class="balloon hidden" id="balloon">
+            <div class="links">
+              <p>SHARE</p>
+              <a href="#"><img src="./images/icon-facebook.svg"/></a>
+              <a href="#"><img src="./images/icon-twitter.svg"/></a>
+              <a href="#"><img src="./images/icon-pinterest.svg"/></a>
+            </div>
+          </div>
+          <div class="button" id="btn-share">
+            <img src="./images/icon-share.svg"/>
+          </div>
+        </div>
+      </div>
       <!-- <div class="attribution">
         Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
         Coded by <a href="https://github.com/LizzardMedeiros" target="_blank">LizzardMedeiros</a>.
       </div> -->
     </div>
-  </div>
-  <!-- 
-
-  Ever been in a room and felt like something was missing? Perhaps 
-  it felt slightly bare and uninviting. I’ve got some simple tips 
-  to help you make any room feel complete.
-
-  Michelle Appleton
-  28 Jun 2020
-
-  Share -->
-  
+  </div> 
 </body>
+<script>
+  const balloon = document.querySelector('#balloon');
+  balloon.visible = false;
+  document.querySelector('#btn-share').addEventListener('click', function() {
+    balloon.visible = !balloon.visible;
+    balloon.visible ? balloon.classList.remove('hidden') : balloon.classList.add('hidden');
+  });
+</script>
 </html>

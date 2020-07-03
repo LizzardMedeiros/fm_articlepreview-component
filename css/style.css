@@ -9,6 +9,7 @@
 }
 
 body {
+  background-color: rgb(237, 242, 248);
   margin: 0;
   display: flex;
   flex-direction: column;
@@ -19,13 +20,15 @@ body {
 }
 
 h1 {
+  color: hsl(217, 19%, 35%);
   font-size: 1.28rem;
   font-weight: 700;
 }
 
 h2 {
+  color: hsl(217, 19%, 35%);
   font-size: 0.8rem;
-  font-weight: 700;
+  font-weight: 500;
   line-height: 20px;
 }
 
@@ -34,24 +37,129 @@ h2 {
 }
 
 .component {
+  background-color: white;
   display: flex;
   justify-content: space-between;
   border-radius: 8px;
   width: 730px;
-  background-color: rgba(21, 21, 21, .3);
 }
 
 .component .thumb-container, .component .thumb-container img {
   width: 320px;
 }
 
-.component .thumb-container{
-  overflow: hidden;
-}
-
 .content-container {
   padding: 18px 38px;
   width: 410px;
+}
+
+.user-sector {
+  padding: 8px 0;
+  display: flex;
+  align-items: center;
+
+}
+
+.user-sector .profile-container {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+}
+
+.user-sector .profile-data {
+  display: flex;
+  flex-direction: column;
+  padding: 0 16px;
+}
+
+.profile-data strong, .profile-data small {
+  font-size: 0.83rem;
+}
+
+.profile-data strong {
+  color: hsl(217, 19%, 35%);
+  font-weight: 700;
+}
+
+.profile-data small {
+  color: hsl(212, 23%, 69%);
+  margin-top: 3px;
+}
+
+.user-sector .profile-container img {
+  width: 40px;
+}
+
+.user-sector .social {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  margin-left: 199px;
+  width: 300px;
+  height: 210px;
+}
+
+.user-sector .social .balloon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  position: absolute;
+  background: hsl(217, 19%, 35%);
+  border-radius: 10px;
+  width: 245px;
+  height: 55px;
+  margin-top: 5px;
+}
+
+.user-sector .social .balloon::before {
+  position: absolute;
+  content: " ";
+  width: 0; 
+  height: 0;
+  border-left: 12px solid transparent;
+  border-right: 12px solid transparent;
+  border-top: 12px solid hsl(217, 19%, 35%);
+  margin-top: 32px;
+}
+
+.social .balloon .links {
+  color: hsl(212, 23%, 69%);
+  display: flex;
+  justify-content: space-around;
+  letter-spacing: 3px;
+  align-items: center;
+  padding: 0 25px;
+  width: 100%;
+}
+
+.social .balloon .links a {
+  text-decoration: none;
+  margin-top: 8px;
+  padding: 0;
+}
+
+.user-sector .social .button {
+  background: rgb(237, 242, 248);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+}
+
+.button {
+  cursor: pointer;
+}
+
+.component, .component .thumb-container, .content-container .profile-container {
+  overflow: hidden;
+}
+
+.hidden {
+  display: none !important;
 }
 
 .attribution {
