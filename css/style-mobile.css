@@ -1,0 +1,167 @@
+.reference {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: url(../design/desktop-design.jpg);
+  z-index: -1;
+}
+
+body {
+  background-color: rgb(237, 242, 248);
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  font-family: 'Manrope', sans-serif;
+}
+
+h1 {
+  color: hsl(217, 19%, 35%);
+  font-size: 1rem;
+  font-weight: 700;
+  padding: 0 20px;
+}
+
+h2 {
+  color: hsl(217, 19%, 35%);
+  font-size: 0.89rem;
+  font-weight: 500;
+  line-height: 20px;
+  padding: 0 20px;
+}
+
+.component .thumb-container img {
+  height: 280px;
+}
+
+.component {
+  background-color: white;
+  display: flex;
+  flex-direction: column; /**/
+  justify-content: center; /**/
+  align-items: center;
+  border-radius: 8px;
+  width: 90%;
+  height: 530px;
+}
+
+.component .thumb-container, .component .thumb-container img {
+  width: 100%;
+}
+
+.content-container {
+  padding: 18px 38px;
+  width: 100%;
+}
+
+.user-sector {
+  margin-top: 30px;
+  padding: 8px 0;
+  display: flex;
+  align-items: center;
+
+}
+
+.user-sector .profile-container {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+}
+
+.user-sector .profile-data {
+  display: flex;
+  flex-direction: column;
+  padding: 0 16px;
+}
+
+.profile-data strong, .profile-data small {
+  font-size: 0.83rem;
+}
+
+.profile-data strong {
+  color: hsl(217, 19%, 35%);
+  font-weight: 700;
+}
+
+.profile-data small {
+  color: hsl(212, 23%, 69%);
+  margin-top: 3px;
+}
+
+.user-sector .profile-container img {
+  width: 40px;
+}
+
+.user-sector .social {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  margin-left: 0;
+  width: 90%;
+  height: 210px;
+}
+
+.user-sector .social .balloon {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  color: white;
+  position: absolute;
+  bottom: 55px;
+  background: hsl(217, 19%, 35%);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  width: 100%;
+  height: 100px;
+  margin-bottom: 0;
+
+}
+
+.social .balloon .links {
+  color: hsl(212, 23%, 69%);
+  display: flex;
+  justify-content: space-around;
+  letter-spacing: 3px;
+  align-items: center;
+  padding: 0 25px;
+  width: 60%;
+}
+
+.social .balloon .links a {
+  text-decoration: none;
+  margin-top: 8px;
+  padding: 0;
+}
+
+.user-sector .social .button {
+  background: rgb(237, 242, 248);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  margin-left: 80%;
+  z-index: 10;
+}
+
+.button {
+  cursor: pointer;
+}
+
+.component, .component .thumb-container, .content-container .profile-container {
+  overflow: hidden;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.attribution {
+
+}
